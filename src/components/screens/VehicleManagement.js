@@ -38,7 +38,6 @@ const VehicleManagement = () => {
               {label: 'Audi', value: 'Audi'},
               {label: 'BMW', value: 'BMW'},
             ]}
-            defaultNull
             placeholder="Toyota"
             defaultIndex={0}
             containerStyle={{height: height * 0.08}}

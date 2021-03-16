@@ -1,5 +1,5 @@
 import 'react-native-gesture-handler';
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import {
   SafeAreaView,
   StyleSheet,
@@ -13,6 +13,8 @@ import {
   StatusBar,
 } from 'react-native';
 
+import AsyncStorage from '@react-native-community/async-storage';
+
 import ImagePicker from 'react-native-image-crop-picker';
 
 import {Title} from 'react-native-paper';
@@ -25,6 +27,15 @@ const {width, height} = Dimensions.get('window');
 const EditProfileScreen = () => {
   const [visible, setVisible] = useState(false);
   const [image, setImage] = useState(image);
+  const [name, setName] = useState('');
+  useEffect(() => {
+    getData();
+  });
+
+  const getData = async () => {
+    const username = await AsyncStorage.getItem('setFullName');
+    setName(username);
+  };
 
   const photoFromGallary = () => {
     ImagePicker.openPicker({
@@ -112,7 +123,7 @@ const EditProfileScreen = () => {
           />
         </TouchableOpacity>
 
-        <Title style={{alignSelf: 'center'}}>Jhon Doe</Title>
+        <Title style={{alignSelf: 'center'}}>{name}</Title>
         <Text style={styles.usernametext}>Username:</Text>
         <TextInput
           textAlignVertical="bottom"
