@@ -31,7 +31,7 @@ const RatingScreen = () => {
         <Image
           style={styles.Ratingimage}
           resizeMode="contain"
-          source={require('../src/components/image/Ratingimage.png')}
+          source={require('../assets/Ratingimage.png')}
         />
         <Rating type="star" />
         <Text style={styles.FareText}>Fare - $12.89</Text>

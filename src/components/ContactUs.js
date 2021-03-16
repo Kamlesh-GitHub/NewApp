@@ -35,7 +35,7 @@ const ContactScreen = () => {
           <Image
             style={styles.emailUsimage}
             resizeMode="contain"
-            source={require('../src/components/image/emailusimage.png')}
+            source={require('../assets/emailusimage.png')}
           />
 
           <TouchableOpacity style={styles.SendemailButton}>
@@ -45,7 +45,7 @@ const ContactScreen = () => {
             <Image
               style={styles.ContactUsimage}
               resizeMode="contain"
-              source={require('../src/components/image/ContactUs.png')}
+              source={require('../assets/ContactUs.png')}
             />
           </View>
         </View>

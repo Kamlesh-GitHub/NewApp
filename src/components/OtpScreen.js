@@ -32,14 +32,14 @@ const OtpScreen = ({navigation}) => {
             <Image
               resizeMode="contain"
               style={styles.backbutton}
-              source={require('../src/components/image/backbutton.png')}
+              source={require('../assets/backbutton.png')}
             />
           </TouchableOpacity>
 
           <Image
             resizeMode="contain"
             style={styles.mobilelogo}
-            source={require('../src/components/image/mobilelogo.png')}
+            source={require('../assets/mobilelogo.png')}
           />
 
           <Text style={styles.passcodetext}>Passcode verification</Text>

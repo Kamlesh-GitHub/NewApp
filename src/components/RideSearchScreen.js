@@ -43,7 +43,7 @@ class RideSearchScreen extends React.Component {
               <Image
                 style={styles.userimage}
                 resizeMode="contain"
-                source={require('../src/components/image/userprofile.png')}
+                source={require('../assets/userprofile.png')}
               />
               <View
                 style={{

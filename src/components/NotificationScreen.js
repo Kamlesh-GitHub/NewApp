@@ -130,7 +130,7 @@ const App = () => {
           </View>
           <Image
             style={styles.signimage}
-            source={require('../src/components/image/notificationimage.png')}
+            source={require('../assets/notificationimage.png')}
             resizeMode="contain"
             style={styles.NotificationImage}></Image>
         </View>

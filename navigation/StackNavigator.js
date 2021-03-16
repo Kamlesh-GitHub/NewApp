@@ -2,17 +2,17 @@ import React from 'react';
 import {TouchableOpacity} from 'react-native';
 
 import {createStackNavigator} from '@react-navigation/stack';
-import SignIn from '../screens/SignIn';
-import Signup from '../screens/Signup';
-import OtpScreen from '../screens/OtpScreen';
-import RideSearchScreen from '../screens/RideSearchScreen';
-import WalletScreen from '../screens/WalletScreen';
-import MyProfileScreen from '../screens/MyProfileScreen';
-import HistoryScreen from '../screens/HistoryScreen';
-import NotificationScreen from '../screens/NotificationScreen';
-import ContactUs from '../screens/ContactUs';
-import VehicleManagement from '../screens/VehicleManagement';
-import EditProfilescreen from '../screens/EditProfilescreen';
+import SignIn from '../src/components/SignIn';
+import Signup from '../src/components/Signup';
+import OtpScreen from '../src/components/OtpScreen';
+import RideSearchScreen from '../src/components/RideSearchScreen';
+import WalletScreen from '../src/components/WalletScreen';
+import MyProfileScreen from '../src/components/MyProfileScreen';
+import HistoryScreen from '../src/components/HistoryScreen';
+import NotificationScreen from '../src/components/NotificationScreen';
+import ContactUs from '../src/components/ContactUs';
+import VehicleManagement from '../src/components/VehicleManagement';
+import EditProfilescreen from '../src/components/EditProfilescreen';
 import {HomeTabNavigator} from '../navigation/TabNavigator';
 
 import Icons from 'react-native-vector-icons/MaterialIcons';

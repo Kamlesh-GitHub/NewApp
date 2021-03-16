@@ -22,15 +22,11 @@ export default function App({navigation}) {
             height: height * 0.6,
             paddingHorizontal: width * 0.03,
           }}>
-          <Image
-            style={styles.signin}
-            resizeMode="contain"
-            source={require('../src/components/image/signin.png')}
-          />
+          <Text style={styles.SignInText}>Sign In</Text>
           <Image
             resizeMode="contain"
             style={styles.Logo}
-            source={require('../src/components/image/Signinlogo.png')}
+            source={require('../assets/Signinlogo.png')}
           />
           <Text style={styles.welcomeText}>Welcome to Equip Taxi Driver </Text>
           <View>
@@ -58,7 +54,7 @@ export default function App({navigation}) {
           <Image
             resizeMode="contain"
             style={styles.carImage}
-            source={require('../src/components/image/car.png')}
+            source={require('../assets/car.png')}
           />
           <View
             style={{
@@ -78,10 +74,11 @@ export default function App({navigation}) {
 }
 
 const styles = StyleSheet.create({
-  signin: {
-    width: width * 0.22,
-    height: height * 0.06,
-    marginTop: height * 0.015,
+  SignInText: {
+    fontSize: width * 0.065,
+    fontWeight: 'bold',
+    marginTop: height * 0.02,
+    color: '#53C5C9',
   },
 
   Logo: {

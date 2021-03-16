@@ -28,7 +28,7 @@ const WalletScreen = () => {
 
           <Image
             style={styles.WalletImage}
-            source={require('../src/components/image/WalletImage.png')}
+            source={require('../assets/WalletImage.png')}
           />
           <TouchableOpacity style={styles.addCardDetail}>
             <MaterialIcon
@@ -82,7 +82,7 @@ const WalletScreen = () => {
           <View style={styles.DebitCardView}>
             <Image
               style={{margin: width * 0.02}}
-              source={require('../src/components/image/cardlogo.png')}></Image>
+              source={require('../assets/cardlogo.png')}></Image>
             <Text style={styles.Debitcardtext}> Debit Card</Text>
             <Text style={styles.Debitcardamounttext}>$ 25.56</Text>
           </View>

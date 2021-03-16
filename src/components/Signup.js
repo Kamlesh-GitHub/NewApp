@@ -38,15 +38,11 @@ const Signup = ({navigation}) => {
             paddingHorizontal: '5%',
             paddingVertical: '3%',
           }}>
-          <Image
-            style={styles.signup}
-            resizeMode="contain"
-            source={require('../src/components/image/signup.png')}
-          />
+          <Text style={styles.signUpText}>Sign Up</Text>
           <Image
             style={styles.Logo}
             resizeMode="contain"
-            source={require('../src/components/image/Logo.png')}
+            source={require('../assets/Logo.png')}
           />
 
           <Text style={styles.welcomeText}>Welcome to Equip Taxi Driver</Text>
@@ -120,7 +116,7 @@ const Signup = ({navigation}) => {
           <Image
             resizeMode="contain"
             style={styles.carImage}
-            source={require('../src/components/image/car.png')}
+            source={require('../assets/car.png')}
           />
 
           <View
@@ -140,9 +136,11 @@ const Signup = ({navigation}) => {
 };
 
 const styles = StyleSheet.create({
-  signup: {
-    paddingVertical: height * 0.03,
-    width: width * 0.2,
+  signUpText: {
+    fontSize: width * 0.06,
+    fontWeight: 'bold',
+    color: '#53C5C9',
+    marginTop: height * 0.02,
   },
   Logo: {
     height: height * 0.13,
